@@ -1,0 +1,62 @@
+# Format of input file is as follows.
+  A comment of this form (any number of lines of text with
+  a hash sign at the beginning of the first line and
+  another hash sign at the end of the last line) is allowed
+  before every block of inputs.
+  In this file, these comments are used to document the
+  sequence of inputs for a bond option.
+
+  The first input is the No of Lattice Points     	#
+300
+#   Next come the desired Outputs (1: Desired, 0: Not Desired)
+    a) Input Data.                       b) Yield Curve
+    c) LatticePointWise Yield Curve      d) Yield Curve Detailed Diagnostics
+    e) Full Lattice.                     f) Final Results.
+    For LatticePointWise Yield Curve, n > 1 for every nth point  #
+1 1 0 1 0 1
+#   Bond Maturity: Years, Days  #
+3  0
+#   Coupon Rate, Frequency#
+10 1 
+#   Redemption Value               #
+100
+#   Short Rate and its Volatility in Percent  #
+10 20
+#   a) Yield Curve Type: 0 for Zero, 1 for Par Bond
+    b) Volatilty Curve Type:   0 for none (fixed sigma)
+                               1 Zero
+                               2 Par Bond
+    c) No of points on yield/volatility curves #
+0 1 5
+#   Yield Curve                 #
+1 10   20
+2 11   19
+3 12   18
+4 12.5 17
+5 13   16
+#   Minimum Local Volatility #
+0 
+#   While attempting to match the yield and volatility curve, it
+    may be desired to put greater weight on yield curve. If so provide
+    a number greater than 1 below #
+.5 
+#   Often the Yield Curve is a risk free yield curve and the bond
+    may need to be discounted by adding a Credit Spread to the Yield Curve.
+    If so provide the spread in percent below #
+0
+#   Is this a bond option or embedded option?
+    0 for bond option
+    1 for embedded option  #
+0
+#   Exercise Price of bond option  	#
+95
+#   Time to Maturity of bond option	#
+2
+#   Earliest exercise time of the option 
+    0 for American option
+    maturity for European option #
+2
+#   Is the option a put or a call
+    Put = 0
+    Call = 1 		#
+0

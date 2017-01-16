@@ -1,0 +1,139 @@
+                     I n p u t    D a t a
+
+                     A. Bond Particulars
+Bond Maturity                  25 years 0 days
+Coupon Rate                        0.0000%
+Coupon Frequency                        0
+Redemption Value                   200.00
+
+                     B. Yield Curve
+Short Rate                        20.0000%
+Short Rate Volatility            120.0000%
+Yield/Volatility Curve           Maturity      Yield Volatility
+                                              (Zero)     (Zero)
+                                     0.25     20.00%     75.00%
+                                     0.50     20.00%     65.00%
+                                     1.00     20.00%     50.00%
+                                     2.00     17.00%     45.00%
+                                     3.00     16.50%     31.00%
+                                     4.00     16.50%     24.00%
+                                     5.00     16.50%     21.00%
+                                     6.00     16.25%     19.00%
+                                     7.00     16.00%     18.00%
+                                     8.00     15.75%     17.00%
+                                     9.00     15.50%     16.00%
+                                    10.00     15.25%     15.00%
+                                    25.00     15.06%     14.00%
+Minimum Local Volatility           0.0010%
+Weightage (Yield v. Volatility)     5.0000%
+Spread above Yield Curve           0.0000%
+
+                     D. Computation and Outputs
+No of Lattice Points                  300
+Outputs:
+     Data. 
+     Yield Curve. 
+     Detailed Yield/Volatility Diagnostics 
+     Results. 
+
+                     E. Embedded Option Particulars
+No. of call options to issuer           4
+ StartTime    EndTime      Price
+     4.333      4.333      10.00
+    10.667     10.667      25.00
+    15.417     15.417      50.00
+    20.167     20.167     100.00
+No. of put options to investor          4
+ StartTime    EndTime      Price
+     4.333      4.333      10.00
+    10.667     10.667      25.00
+    15.417     15.417      50.00
+    20.167     20.167     100.00
+Option Adjusted Spread         Required
+Issue Price                          5.30
+
+                     Y i  e l d   C u r v e
+
+  Maturity  ZeroYield  ZeroVolat   ParYield   ParVolat
+      0.50     20.00%     65.00%     20.00%     65.00%
+      1.00     20.00%     50.00%     20.00%     50.71%
+      1.50     18.00%     46.35%     18.17%     47.58%
+      2.00     17.00%     45.00%     17.24%     46.43%
+      2.50     16.70%     36.54%     16.94%     39.14%
+      3.00     16.50%     31.00%     16.75%     34.36%
+      3.50     16.50%     26.97%     16.72%     30.86%
+      4.00     16.50%     24.00%     16.70%     28.28%
+      4.50     16.50%     22.30%     16.68%     26.73%
+      5.00     16.50%     21.00%     16.67%     25.55%
+      5.50     16.36%     19.89%     16.57%     24.60%
+      6.00     16.25%     19.00%     16.49%     23.84%
+      6.50     16.12%     18.45%     16.39%     23.34%
+      7.00     16.00%     18.00%     16.31%     22.92%
+      7.50     15.87%     17.46%     16.23%     22.49%
+      8.00     15.75%     17.00%     16.15%     22.13%
+      8.50     15.62%     16.46%     16.07%     21.76%
+      9.00     15.50%     16.00%     16.00%     21.43%
+      9.50     15.37%     15.47%     15.92%     21.10%
+     10.00     15.25%     15.00%     15.85%     20.81%
+     10.50     15.23%     14.89%     15.83%     20.66%
+     11.00     15.22%     14.80%     15.81%     20.52%
+     11.50     15.21%     14.72%     15.80%     20.40%
+     12.00     15.20%     14.64%     15.78%     20.29%
+     12.50     15.19%     14.58%     15.77%     20.20%
+     13.00     15.18%     14.52%     15.76%     20.11%
+     13.50     15.17%     14.47%     15.75%     20.03%
+     14.00     15.16%     14.43%     15.74%     19.97%
+     14.50     15.15%     14.38%     15.73%     19.90%
+     15.00     15.14%     14.35%     15.72%     19.85%
+     15.50     15.14%     14.31%     15.71%     19.80%
+     16.00     15.13%     14.28%     15.71%     19.75%
+     16.50     15.13%     14.25%     15.70%     19.71%
+     17.00     15.12%     14.23%     15.70%     19.67%
+     17.50     15.11%     14.20%     15.69%     19.64%
+     18.00     15.11%     14.18%     15.69%     19.61%
+     18.50     15.10%     14.16%     15.68%     19.58%
+     19.00     15.10%     14.14%     15.68%     19.56%
+     19.50     15.10%     14.13%     15.68%     19.53%
+     20.00     15.09%     14.11%     15.67%     19.51%
+     20.50     15.09%     14.10%     15.67%     19.49%
+     21.00     15.08%     14.08%     15.67%     19.47%
+     21.50     15.08%     14.07%     15.66%     19.46%
+     22.00     15.08%     14.06%     15.66%     19.44%
+     22.50     15.07%     14.05%     15.66%     19.43%
+     23.00     15.07%     14.04%     15.66%     19.42%
+     23.50     15.07%     14.03%     15.65%     19.41%
+     24.00     15.07%     14.02%     15.65%     19.40%
+     24.50     15.06%     14.01%     15.65%     19.39%
+     25.00     15.06%     14.00%     15.65%     19.38%
+
+Yield and Volatility Curve Diagnostics
+Yield/volatility curve matched satisfactorily
+Mean Absolute Error: Yield = 0.000%. Volatility = 0.000%
+Max  Absolute Error: Yield = 0.001%. Volatility = 0.005%
+
+           V a l u a t i o n 
+
+Option Adjusted Spread         =    0.0000%
+Bond Value with Calls/Puts     =     5.0307
+Value of Straight Bond         =     5.3033
+Stochastic Duration            =     1.0932(using time 0 to time 0.0833333)
+                               =     1.0244(using time 0 to time 0.166667)
+Theta                          =     1.0614(21.10%)
+                                 (using time 0 to time 0.166667)
+Theta                          =     1.0547(20.96%)
+                                 (using time 0 to time 0.333333)
+Valuation using estimated OAS
+OAS = -1.219%.  Pricing Error = -1.03917E-13
+Detailed results for this value follow.
+
+           V a l u a t i o n 
+
+Option Adjusted Spread         =   -1.2188%
+Bond Value with Calls/Puts     =     5.3000
+Value of Straight Bond         =     7.1751
+Stochastic Duration            =     1.0932(using time 0 to time 0.0833333)
+                               =     1.0234(using time 0 to time 0.166667)
+Theta                          =     1.0525(19.86%)
+                                 (using time 0 to time 0.166667)
+Theta                          =     1.0432(19.68%)
+                                 (using time 0 to time 0.333333)

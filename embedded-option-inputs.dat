@@ -1,0 +1,79 @@
+# Format of input file is as follows.
+  A comment of this form (any number of lines of text with
+  a hash sign at the beginning of the first line and
+  another hash sign at the end of the last line) is allowed
+  before every block of inputs.
+  In this file, these comments are used to document the
+  sequence of inputs for an embedded option.
+
+  The first input is the No of Lattice Points     	#
+300
+#   Next come the desired Outputs (1: Desired, 0: Not Desired)
+    a) Input Data.                       b) Yield Curve
+    c) LatticePointWise Yield Curve      d) Yield Curve Detailed Diagnostics
+    e) Full Lattice.                     f) Final Results.
+    For LatticePointWise Yield Curve, n > 1 for every nth point  #
+1 1 0 1 0 1
+#   Bond Maturity: Years, Days  #
+25  0
+#   Coupon Rate, Frequency, Days to First Coupon #
+0 0 0
+#   Redemption Value     #
+200
+#   Short Rate and its Volatility in Percent  #
+20 120
+#   a) Yield Curve Type: 0 for Zero, 1 for Par Bond
+    b) Volatilty Curve Type:   0 for none (fixed sigma)
+                               1 Zero
+                               2 Par Bond
+    c) No of points on yield/volatility curves #
+0 1 13
+#   Yield Curve#
+.25 20   75
+.50 20   65
+1   20   50
+2   17   45
+3   16.5   31
+4   16.5   24
+5   16.5   21
+6   16.25  19
+7   16   18
+8   15.75   17
+9   15.5   16
+10  15.25   15
+25  15.06    14
+#   Minimum Local Volatility #
+0.001
+#   While attempting to match the yield and volatility curve, it
+    may be desired to put greater weight on yield curve. If so provide
+    a number greater than 1 below #
+5
+#   Often the Yield Curve is a risk free yield curve and the bond
+    may need to be discounted by adding a Credit Spread to the Yield Curve.
+    If so provide the spread in percent below #
+0
+#   Is this a bond option or embedded option?
+    0 for bond option
+    1 for embedded option  #
+1
+#   Should the implied Option Adjusted Spread (OAS) be computed using
+    the issue price?
+    0 = NO. 1 = YES #
+2
+#   If OAS is to be computed what is the Issue Price           #
+5.3
+#   No of Call Options to Issuer   #
+4
+#   For Each Call Option:  Start Time,  End Time, Price #
+ 4.333333  4.333333 10
+10.666667 10.666667 25
+15.416667 15.416667 50
+20.166667 20.166667 100 
+#   No of Put Options to Investor   #
+4
+#   For Each Put Option:  Start Time,  End Time, Price #
+ 4.333333  4.333333 10
+10.666667 10.666667 25
+15.416667 15.416667 50
+20.166667 20.166667 100
+

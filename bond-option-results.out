@@ -1,0 +1,64 @@
+                     I n p u t    D a t a
+
+                     A. Bond Particulars
+Bond Maturity                  3 years 0 days
+Coupon Rate                       10.0000%
+Coupon Frequency                        1
+Redemption Value                   100.00
+
+                     B. Yield Curve
+Short Rate                        10.0000%
+Short Rate Volatility             20.0000%
+Yield/Volatility Curve           Maturity      Yield Volatility
+                                              (Zero)     (Zero)
+                                     1.00     10.00%     20.00%
+                                     2.00     11.00%     19.00%
+                                     3.00     12.00%     18.00%
+                                     4.00     12.50%     17.00%
+                                     5.00     13.00%     16.00%
+Minimum Local Volatility           0.0000%
+Weightage (Yield v. Volatility)     0.5000%
+Spread above Yield Curve           0.0000%
+
+                    C. Option Particulars
+Option Type                           Put
+Exercise Price                    95.0000
+Expires at Time                    2.0000
+Exercise at or after Time          2.0000
+
+                     D. Computation and Outputs
+No of Lattice Points                  300
+Outputs:
+     Data. 
+     Yield Curve. 
+     Detailed Yield/Volatility Diagnostics 
+     Results. 
+
+                     Y i  e l d   C u r v e
+
+  Maturity  ZeroYield  ZeroVolat   ParYield   ParVolat
+      0.50     10.00%     20.00%     10.00%     20.00%
+      1.00     10.00%     20.00%     10.00%     20.00%
+      1.50     10.67%     19.26%     10.63%     19.24%
+      2.00     11.00%     19.00%     10.95%     18.96%
+      2.50     11.60%     18.36%     11.49%     18.29%
+      3.00     12.00%     18.00%     11.85%     17.91%
+
+Yield and Volatility Curve Diagnostics
+Yield/volatility curve matched satisfactorily
+Mean Absolute Error: Yield = 0.000%. Volatility = 0.000%
+Max  Absolute Error: Yield = 0.002%. Volatility = 0.001%
+
+           V a l u a t i o n 
+
+Option Adjusted Spread         =    0.0000%
+Option Value                   =     0.6073
+Delta                          =    -0.1232(time 0 to time 0.01)
+                               =    -0.1237(time 0 to time 0.02)
+Stochastic Duration            =   -55.5639(using time 0 to time 0.01)
+                               =   -55.6176(using time 0 to time 0.02)
+Gamma                          =     0.0152(time 0 to time 0.02)
+Theta                          =    -0.1849(-30.45%)
+                                 (using time 0 to time 0.02)
+Theta                          =    -0.1860(-30.63%)
+                                 (using time 0 to time 0.04)
